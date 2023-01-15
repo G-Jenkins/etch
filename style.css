@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+:root {
+  --primary-color: #575a5e;
+  --secondary-color: #222823;
+  --text-color: #d90429;
+  --border-color: #011627;
+  --blue-color: #0197f6;
+
+}
+* {
+  color: var(--text-color);
+  font-family: "Nunito", sans-serif;
+}
+
+html,
+body {
+  font-family: inherit;
+}
+/* Title */
+#name {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+/* Container for GRID */
+#container {
+  display: grid;
+  width: 390px;
+  height: 390px;
+  display: grid;
+  margin: auto;
+  border: 10px solid var(--text-color);
+  box-shadow: -3px 4px 13px -1px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: -3px 4px 13px -1px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: -3px 4px 13px -1px rgba(0, 0, 0, 0.9);
+}
+
+
+#footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding-top: 45px;
+  }
+  
+/* Grid Item Styling */
+
+
+ .grid-item {
+  padding: 1em;
+  background-color: black;
+  width: 1em;
+  height: 1em;
+  border: 1px solid var(--secondary-color);
+} 
+
+.grid-item:hover {
+    background-color: black;
+  }
+  
+
+/* Overall styling */
+
+#page-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  min-height: 100vh;
+}
+.content-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 390px;
+  height: auto;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
+  margin-top: 2rem;
+  border: 3px solid var(--border-color);
+  border-radius: 25px;
+}
+
+h1 {
+  font-size: 40px;
+}
+.cellHover {
+  background-color: black;
+}
+
+/* Button Styling */
+.btn:hover {
+  background-color: var(--primary-color);
+}
+
+.btn.permahover {
+  background-color: white;
+}
+
+.btn:active {
+  background-color: var(--blue-color);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 15px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border-color: var(--red-color);
+
+  text-align: center;
+  border-radius: 10px;
+}
+
+.btnRainbow {
+  font-size: 14px;
+  color: #fff;
+  background: linear-gradient(
+    45deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet,
+    red
+  );
+
+  border-radius: 50px;
+  margin: 5px;
+}
+
+.btnRainbow:active {
+  background-color: var(--blue-color);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.btnRainbow:hover {
+  color: var(--text-color);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/* 
+#grid {
+  display: inline-block;
+    border: 1px solid black;
+} */
